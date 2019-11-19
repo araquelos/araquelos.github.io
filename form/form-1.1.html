@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Form 1.1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap 4 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Fontes -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+	<!-- Outros Estilos -->
+	<style type="text/css">
+		body{
+			font-family: 'Barlow Semi Condensed', sans-serif;
+		}
+		.was-validated h2{
+			font-size: 16px;
+			font-weight: normal;
+			color: #004EB4;
+			text-transform: uppercase;
+			margin-top: 10px;
+		}
+		.was-validated .valid-feedback{
+			color: #32CD32;	
+		}
+		.was-validated .invalid-feedback{
+			color: #FF4500;	
+			/* --------------------------------------------------------------------------------------------------------------------------- */
+		}
+		.was-validated .form-control,
+			.was-validated .custom-select {
+			margin: 0;
+			padding: 0;
+			border: none;
+			border-radius: 0;
+			font-weight: lighter;
+            font-size: 16px;
+            color: #696969;
+		}
+		.was-validated .form-control::placeholder {			
+            color: #DCDCDC;
+        }
+		.was-validated .form-control:valid,
+			.was-validated .custom-select:valid { 
+			background: url("img/valid-green.svg") no-repeat right center;
+			background-size: 15px 15px;
+			border-bottom: 1px solid #32CD32;
+		}
+		.was-validated .form-control:valid:focus,
+			.was-validated .custom-select:valid:focus {
+			background: url("img/edit-green.svg") no-repeat right center;
+			background-size: 15px 15px;
+    		border-bottom: 2px solid #32CD32;
+    		box-shadow: none;
+    		-moz-box-shadow: none;
+  			-webkit-box-shadow: none;
+		}
+		.was-validated .form-control:invalid,
+			.was-validated .custom-select:invalid { 
+			background: url("img/invalid-red.svg") no-repeat right center;
+			background-size: 15px 15px;
+			border-bottom: 1px solid #FF4500;
+		}
+		.was-validated .form-control:invalid:focus,
+			.was-validated .custom-select:invalid:focus {
+			background: url("img/edit-red.svg") no-repeat right center;
+			background-size: 15px 15px;
+    		border-bottom: 2px solid #FF4500;
+    		box-shadow: none;
+    		-moz-box-shadow: none;
+  			-webkit-box-shadow: none;
+			/* --------------------------------------------------------------------------------------------------------------------------- */
+		}
+
+		.custom-control-input.is-valid~.custom-control-label, .was-validated .custom-control-input:valid~.custom-control-label{
+			font-size: 16px;
+			color: #696969;
+		}
+		.custom-control-input.is-valid~.custom-control-label::before, .was-validated .custom-control-input:valid~.custom-control-label::before{
+			border-color: #696969;
+		}
+		.custom-control-input.is-valid:checked~.custom-control-label::before, .was-validated .custom-control-input:valid:checked~.custom-control-label::before{
+			border-color: #004EB4;
+			background-color: transparent;
+		}
+		.custom-radio .custom-control-input:checked~.custom-control-label::after{
+			background-image: none;
+			background-color: #004EB4;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-left: 5px;
+            margin-top: 5px;
+		}
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+			background-image: url("img/check-blue.svg"); 
+			/* --------------------------------------------------------------------------------------------------------------------------- */
+		}
+		.was-validated .btn-enviar{
+			background-color: #00CD66;
+			background-image: linear-gradient(180deg, #00FF7F, #00EE76, #00CD66);
+			color: #FFFFFF;
+			text-transform: uppercase;
+			border: none;
+			box-shadow: 0px 2px 3px #DCDCDC;
+		}
+		.was-validated .btn-enviar:hover, .was-validated .btn-enviar:active {
+			background-color: #00CD66;
+			background-image: none;
+			color: #00FF7F;
+			transition: 1s;
+		}
+		.was-validated .btn-limpar{
+			background-color: #CD5555;
+			background-image: linear-gradient(180deg, #FF6A6A, #EE6363, #CD5555);
+			color: #FFFFFF;
+			text-transform: uppercase;
+			border: none;
+			box-shadow: 0px 2px 3px #DCDCDC;
+		}
+		.was-validated .btn-limpar:hover, .was-validated .btn-limpar:active {
+			background-color: #CD5555;
+			background-image: none;
+			color: #FF6A6A;
+			transition: 1s;
+
+		}
+	</style>
+</head>
+
+<body>
+	<!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
+	<div class="container">
+		<form action="" class="was-validated"  autocomplete="off">
+			<div class="row">
+				<div class="col-md-4 col-12">
+					<!-- NOME -->
+					<div class="form-group">
+						<h2 for="input-nome">Nome</h2>
+						<input type="text" class="form-control" id="input-nome" placeholder="Informe o seu nome completo" name="nome" required>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório</div>
+					</div>
+					<!-- E-MAIL -->
+					<div class="form-group">
+						<h2 for="input-email">E-mail</h2>
+						<input type="email" class="form-control" id="input-email" placeholder="Informe o seu e-mail" name="email" required>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório</div>
+					</div>
+					<!-- DATA DE NASCIMENTO -->
+					<div class="form-group">
+						<h2 for="input-dnasc">Data de Nascimento</h2>
+						<input type="text" class="form-control" id="input-dnasc" placeholder="Informe a sua data de nascimento" name="dnasc" required>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório</div>
+					</div>													
+				</div>
+				<div class="col-md-4 col-12">	
+					<!-- TELEFONE -->
+					<div class="form-group">
+						<h2 for="input-telefone">Telefone</h2>
+						<input type="tel" class="form-control" id="input-telefone" placeholder="Informe o seu telefone" name="telefone" required>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório</div>
+					</div>
+					<!-- CPF -->
+					<div class="form-group">
+						<h2 for="input-cpf">CPF</h2>
+						<input type="text" class="form-control" id="input-cpf" placeholder="Informe o seu CPF" name="cpf" required>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório</div>
+					</div>
+					<!-- CIDADE -->
+                    <div class="form-group">
+                    	<h2 for="input-ocup">Ocupação</h2>
+                      	<select class="custom-select" id="input-ocup" required>
+                        	<option value="">Selecione a sua ocupação</option>
+                        	<option value="1">Assalariado (CLT)</option>
+                        	<option value="2">Servidor público (Efetivo)</option>
+                        	<option value="3">Servidor público (Temporário)</option>
+                        </select>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório</div>
+                    </div>
+                  </div>
+				<div class="col-md-4 col-12">
+					<!-- EXIBIR SENHA (RADIO) -->
+					<div class="form-group">
+						<h2>Exibir Senha?</h2>
+							<div class="custom-control custom-radio">
+	                        	<input type="radio" class="custom-control-input" id="exibir-senha-sim" name="exibir-senha">
+	                        	<label class="custom-control-label" for="exibir-senha-sim">Sim</label>
+	                      	</div>
+	                      	<div class="custom-control custom-radio">
+	                        	<input type="radio" class="custom-control-input" id="exibir-senha-nao" name="exibir-senha">
+	                        	<label class="custom-control-label" for="exibir-senha-nao">Não</label>
+	                      	</div>
+                    </div>
+					<!-- SENHA -->
+					<div class="form-group" id="exibir-senha" style="display: none">
+						<h2 for="input-senha">Senha</h2>
+						<input type="password" class="form-control" id="input-senha" placeholder="Digite a sua senha" name="senha" disabled required>
+						<div class="valid-feedback">Válido!</div>
+						<div class="invalid-feedback">* Campo Obrigatório.</div>
+					</div>
+					<!-- TIPO DE SENHA (CHECK) -->
+					<div class="form-group" id="exibir-tpsenha" style="display: none">
+						<h2>Tipo de Senha:</h2>
+	                      <div class="custom-control custom-checkbox">
+	                        <input type="checkbox" class="custom-control-input" id="senha-numerica">
+	                        <label class="custom-control-label" for="senha-numerica">Numérica</label>
+	                      </div>
+	                      <div class="custom-control custom-checkbox">
+	                        <input type="checkbox" class="custom-control-input" id="senha-alfan">
+	                        <label class="custom-control-label" for="senha-alfan">Alfa-numérica</label>
+	                      </div>
+                    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<button type="submit" class="btn btn-enviar"><i class="fa fa-check-circle-o"></i> Enviar</button>
+					<button type="reset" class="btn btn-limpar ml-2" id="btn-reset"><i class="fa fa-ban"></i> Limpar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-------------------------------------------------- FINAL do CÓDIGO -------------------------------------------------->
+
+	<!-- Scripts jQuery e Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Outros Scrips -->
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.min.js"/></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#input-dnasc").mask('00/00/0000', {clearIfNotMatch: true});
+			$("#input-telefone").mask('(00) 00000-0000', {clearIfNotMatch: true});
+			$("#input-cpf").mask('000.000.000-00', {clearIfNotMatch: true});
+			$("#btn-reset").click(function(){
+        		$("#exibir-senha").hide();
+        		$("#exibir-tpsenha").hide();
+        		document.getElementById("input-senha").disabled = true;
+    		});
+    		$("#exibir-senha-sim").click(function(){
+        		$("#exibir-senha").show();
+        		$("#exibir-tpsenha").show();
+        		document.getElementById("input-senha").disabled = false;
+    		});
+    		$("#exibir-senha-nao").click(function(){
+        		$("#exibir-senha").hide();
+        		$("#exibir-tpsenha").hide();
+        		document.getElementById("input-senha").disabled = true;
+    		});
+		});
+	</script>
+
+</body>
+</html>
