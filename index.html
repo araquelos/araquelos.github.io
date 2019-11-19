@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>✿ Menu ^^</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <!-- Outros Estilos -->
+    <link rel="stylesheet" href="https://mottie.github.io/tablesorter/dist/css/theme.default.min.css">
+    <style type="text/css">
+        body{
+            font-family: 'Barlow Semi Condensed', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
+    <div class="container mt-2 text-center">
+        <h1>✿ Menu ✿</h1>
+        <table class="tablesorter">
+            <thead>
+                <tr>
+                    <th style="text-align: left">COMPONENTE</th>
+                    <th style="text-align: right">GITHUB</th>
+                    <th style="text-align: right">VERSÕES</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left">Accordion</td>
+                    <td style="text-align: right"><a href="https://github.com/araquelos/modelos-html-css-js-bootstrap/tree/master/accordion" target="_blank">Baixar</a></td>
+                    <td style="text-align: right"><a href="accordion/accordion-1.0.html" target="_blank">1.0</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left">Form</td>
+                    <td style="text-align: right"><a href="https://github.com/araquelos/modelos-html-css-js-bootstrap/tree/master/form" target="_blank">Baixar</a></td>
+                    <td style="text-align: right"><a href="form/form-1.0.html" target="_blank">1.0</a> | <a href="form/form-1.1.html" target="_blank">1.1</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left">Select</td>
+                    <td style="text-align: right"><a href="https://github.com/araquelos/modelos-html-css-js-bootstrap/tree/master/select" target="_blank">Baixar</a></td>
+                    <td style="text-align: right"><a href="select/select-1.0.html" target="_blank">1.0</a></td>
+                </tr>
+            </tbody>
+        </table>        
+    </div>
+    <!-------------------------------------------------- FINAL do CÓDIGO -------------------------------------------------->
+
+    <!-- Scripts jQuery e Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Outros Scrips -->
+    <script src="https://mottie.github.io/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
+    <script src="https://mottie.github.io/tablesorter/dist/js/jquery.tablesorter.widgets.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('table').tablesorter({
+                widgets: ['zebra', 'columns'],
+                usNumberFormat: false,
+                sortReset: true,
+                sortRestart: true
+            });
+        });
+    </script>
+
+</body>
+</html>
