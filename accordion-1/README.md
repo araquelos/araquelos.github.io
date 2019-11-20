@@ -1,4 +1,4 @@
-# Accordion -1-
+# Accordion `1`
 > Acordeão responsivo com JavaScript e ícones.
 
 ![](accordion-1.png)

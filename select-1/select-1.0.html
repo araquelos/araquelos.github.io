@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html>
 <head>
     <title>Select 1.0</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Fontes -->
@@ -11,17 +11,27 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
     <!-- Outros Estilos -->
     <link href="css/bootstrap4/tail.select-default.css" rel="stylesheet">
-    <script src="js/tail.select-full.min.js"></script>
-    <script src="langs/tail.select-pt_BR.js"></script>
     <style type="text/css">
         body{
             font-family: 'Barlow Semi Condensed', sans-serif;
         }
+        h1{
+            font-size: 22px;
+            font-weight: bold;
+            color: #1E90FF;
+            text-transform: uppercase;
+            text-decoration: underline; 
+        }
         h2{
             font-size: 16px;
             font-weight: normal;
-            color: #A020F0;
+            color: #1E90FF;
             text-transform: uppercase;
+        }
+        p{
+            font-size: 14px;
+            font-weight: normal;
+            color: #1E90FF;
         }
     </style>
 </head>
@@ -29,33 +39,14 @@
 <body>
     <!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
     <div class="container">
-        <div class="row mt-3">
-            <div class="col-md-3 col-12">
-                <h2>Selecione uma cor:</h2>
+        <div class="row mt-4">
+            <h1 class="w-100 text-center">Simples</h1>
+            <div class="col-md-3 col-12"></div>            
+            <div class="col-md-3 col-12 mt-3">
+                <h2 class="m-0 p-0">Selecione uma cor:</h2>
+                <p>Nenhum selecionado</p>
                 <select id="select-simples-1">
-                    <optgroup label="Cores Primárias">
-                        <option selected>Vermelho</option>
-                        <option>Amarelo</option>
-                        <option>Azul</option>
-                    </optgroup>
-                    <optgroup label="Cores Secundárias">
-                        <option data-description="Azul + Amarelo">Verde</option>
-                        <option data-description="Vermelho + Amarelo">Laranja</option>
-                        <option data-description="Azul + Vermelho">Roxo</option>
-                    </optgroup>
-                    <optgroup label="Cores Terciárias">
-                        <option data-description="Verde + Amarelo">Oliva</option>
-                        <option data-description="Azul + Ciano">Celeste</option>
-                        <option data-description="Azul + Magenta">Violeta</option>
-                        <option data-description="Vermelho + Magenta">Rosa</option>
-                        <option data-description="Verde + Ciano">Turquesa</option>
-                    </optgroup>
-                </select>
-                <div class="selecoes-simples"></div>
-            </div>
-            <div class="col-md-3 col-12">
-                <h2>Selecione uma cor:</h2>
-                <select multiple id="select-simples-2">
+                    <option value=""></option>
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
                         <option>Amarelo</option>
@@ -74,9 +65,35 @@
                         <option data-description="Verde + Ciano">Turquesa</option>
                     </optgroup>
                 </select>
-
             </div>
-            <div class="col-md-3 col-12">
+            <div class="col-md-3 col-12 mt-3">
+                <h2 class="m-0 p-0">Selecione uma cor:</h2>
+                <p>Azul selecionado</p>
+                <select id="select-simples-2">
+                    <optgroup label="Cores Primárias">
+                        <option>Vermelho</option>
+                        <option>Amarelo</option>
+                        <option selected>Azul</option>
+                    </optgroup>
+                    <optgroup label="Cores Secundárias">
+                        <option data-description="Azul + Amarelo">Verde</option>
+                        <option data-description="Vermelho + Amarelo">Laranja</option>
+                        <option data-description="Azul + Vermelho">Roxo</option>
+                    </optgroup>
+                    <optgroup label="Cores Terciárias">
+                        <option data-description="Verde + Amarelo">Oliva</option>
+                        <option data-description="Azul + Ciano">Celeste</option>
+                        <option data-description="Azul + Magenta">Violeta</option>
+                        <option data-description="Vermelho + Magenta">Rosa</option>
+                        <option data-description="Verde + Ciano">Turquesa</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="col-md-3 col-12"></div> 
+        </div>
+        <div class="row mt-4">
+            <h1 class="w-100 text-center">Múltiplo</h1>
+            <div class="col-md-3 col-12 mt-3">
                 <h2>Selecione várias cores:</h2>
                 <select id="select-multiplo-1" multiple>
                     <optgroup label="Cores Primárias">
@@ -96,11 +113,11 @@
                         <option data-description="Vermelho + Magenta">Rosa</option>
                         <option data-description="Verde + Ciano">Turquesa</option>
                     </optgroup>
-                </select>           
+                </select> 
             </div>
-            <div class="col-md-3 col-12">
-                <h2>Selecione várias cores:</h2>
-                <select id="select-multiplo-2" multiple>
+            <div class="col-md-3 col-12 mt-3">
+                <h2>Selecione uma cor:</h2>
+                <select multiple id="select-multiplo-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
                         <option>Amarelo</option>
@@ -118,8 +135,33 @@
                         <option data-description="Vermelho + Magenta">Rosa</option>
                         <option data-description="Verde + Ciano">Turquesa</option>
                     </optgroup>
-                </select>           
-            </div>
+                </select>
+            </div>          
+            <div class="col-md-3 col-12 mt-3">
+                <div class="selecoes-simples"></div>
+            </div>          
+            <div class="col-md-3 col-12 mt-3">
+                <h2>Selecione várias cores:</h2>
+                <select id="select-multiplo-3" multiple>
+                    <optgroup label="Cores Primárias">
+                        <option>Vermelho</option>
+                        <option>Amarelo</option>
+                        <option>Azul</option>
+                    </optgroup>
+                    <optgroup label="Cores Secundárias">
+                        <option data-description="Azul + Amarelo">Verde</option>
+                        <option data-description="Vermelho + Amarelo">Laranja</option>
+                        <option data-description="Azul + Vermelho">Roxo</option>
+                    </optgroup>
+                    <optgroup label="Cores Terciárias">
+                        <option data-description="Verde + Amarelo">Oliva</option>
+                        <option data-description="Azul + Ciano">Celeste</option>
+                        <option data-description="Azul + Magenta">Violeta</option>
+                        <option data-description="Vermelho + Magenta">Rosa</option>
+                        <option data-description="Verde + Ciano">Turquesa</option>
+                    </optgroup>
+                </select>  
+            </div>                    
         </div>
     </div>
 
@@ -130,14 +172,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Outros Scrips -->
+    <script src="js/tail.select-full.min.js"></script>
+    <script src="langs/tail.select-pt_BR.js"></script>
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function(){
             tail.select("#select-simples-1", {
+                locale: "pt_BR",
+                search: true,
+                descriptions: true,
+                deselect: true,
+            });
+            tail.select("#select-simples-2", {
+                locale: "pt_BR",
                 search: true,
                 descriptions: true,
                 deselect: true
             });
-            tail.select("#select-simples-2", {
+            tail.select("#select-multiplo-1", {
+                locale: "pt_BR",
+                search: true,
+                descriptions: true,
+                multiLimit: 3
+            });
+            tail.select("#select-multiplo-2", {
+                locale: "pt_BR",
                 search: true,
                 descriptions: true,
                 multiLimit: 3,
@@ -146,12 +204,8 @@
                 multiShowCount: false,
                 multiContainer: '.selecoes-simples'
             });
-            tail.select("#select-multiplo-1", {
-                search: true,
-                descriptions: true,
-                multiLimit: 3
-            });
-            tail.select("#select-multiplo-2", {
+            tail.select("#select-multiplo-3", {
+                locale: "pt_BR",
                 search: true,
                 descriptions: true,
                 multiLimit: 3,

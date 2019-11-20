@@ -28,10 +28,10 @@
         none: "Nenhuma",
         empty: "Nenhuma opção disponível",
         emptySearch: "Nenhuma opção encontrada",
-        limit: "Não é possível selecionar outra opção",
-        placeholder: "Escolha uma opção ...",
-        placeholderMulti: "Escolha até: :limit opção(ões) ...",
-        search: "Buscar ...",
+        limit: "Limite de :limit opções atingido",
+        placeholder: "Escolha uma opção...",
+        placeholderMulti: "Escolha :limit opções...",
+        search: "Buscar...",
         disabled: "Campo desativado"
     });
     return select;
