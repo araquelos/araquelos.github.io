@@ -10,6 +10,8 @@
  |  @copyright  Copyright © 2014 - 2019 SamBrishes, pytesNET <info@pytes.net>
  */
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto&display=swap');
+
 /* @start GENERAL */
 .tail-select, .tail-select *, .tail-select *:before, .tail-select *:after{
     box-sizing: border-box;
@@ -32,7 +34,7 @@
     position: relative;
     font-size: 1rem;
     line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .tail-select mark{
     color: white;
@@ -104,7 +106,7 @@
     background-color: transparent;
     border-width: 1px;
     border-style: solid;
-    border-color: #CCCCCC;
+    border-color: #FF8C00;
     border-radius: 0.2rem;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -113,12 +115,12 @@
 }
 .tail-select input[type="text"]:hover{
     color: #343a40;
-    border-color: #b3b3b3;
+    border-color: #FFA500;
     background-color: transparent;
 }
 .tail-select input[type="text"]:focus{
-    color: #0088CC;
-    border-color: #0088CC;
+    color: #FFA500;
+    border-color: #FFA500;
     background-color: transparent;
 }
 .tail-select.disabled input[type="text"]{
@@ -146,7 +148,7 @@
     line-height: 16px;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     vertical-align: top;
-    background-color: #0088CC;
+    background-color: #FF8C00;
     border-width: 0;
     border-style: solid;
     border-color: transparent;
@@ -156,7 +158,7 @@
 }
 .tail-select-container .select-handle:hover{
     color: white;
-    background-color: #005580;
+    background-color: #FFA500;
 }
 .tail-select-container.select-label .select-handle{
     margin: 5px 3px;
@@ -166,7 +168,7 @@
 /* @start LABEL */
 .tail-select .select-label{
     cursor: pointer;
-    color: #343A40;
+    color: #696969;
     width: 100%;
     margin: 0;
     padding: 0 30px 0 0;
@@ -174,21 +176,22 @@
     position: relative;
     text-align: left;
     background-color: white;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20viewBox%3D'0%200%204%205'%3E%3Cpath%20fill%3D'%23343A40'%20d%3D'M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E");
+    background-image: url("img/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: center right 0.75rem;
     background-size: 8px 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #CCCCCC;
-    border-radius: 3px;
+    border-bottom: 1px solid #FF8C00;
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-color: #4682B4;*/
+    /*border-radius: 3px;*/
     transition: border 142ms linear, background 142ms linear, box-shadow 142ms linear;
     -webkit-transition: border 142ms linear, background 142ms linear, box-shadow 142ms linear;
 }
 .tail-select .select-label:hover{
-    color: #343A40;
-    border-color: #b9b9b9;
-    background-color: #ececec;
+    color: #FFA500;
+    /*border-color: #4682B4;*/
+    background-color: white;
 }
 .tail-select .select-label .label-count, .tail-select .select-label .label-inner{
     width: auto;
@@ -209,7 +212,7 @@
     text-shadow: none;
     white-space: nowrap;
     border-radius: 0.25rem;
-    background-color: #343A40;
+    background-color: #FF8C00;
 }
 .tail-select .select-label .label-inner{
     margin: 0;
@@ -220,11 +223,13 @@
     text-overflow: ellipsis;
 }
 .tail-select.active .select-label{
-    color: #343A40;
-    border-color: #0088CC;
-    background-color: #ececec;
-    box-shadow: 0 0 0 0.2rem rgba(0, 136, 204, 0.35);
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 136, 204, 0.35);
+    color: #FFA500;
+    /*border-color: #4682B4;*/
+    border-bottom: 2px solid #FF8C00;
+    background-color: white;
+    background-image: url("img/arrow-up.svg");
+    /*box-shadow: 0 0 0 0.2rem rgba(0, 136, 204, 0.35);*/
+    /*-webkit-box-shadow: 0 0 0 0.2rem rgba(0, 136, 204, 0.35);*/
 }
 /* @end LABEL */
 
@@ -252,9 +257,9 @@
     margin: 0;
     padding: 10px;
     display: block;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: #e6e6e6;
+    /*border-width: 0 0 1px 0;*/
+    /*border-style: solid;*/
+    /*border-color: #FF8C00;*/
 }
 .tail-select .select-dropdown .dropdown-inner{
     width: 100%;
@@ -300,10 +305,10 @@
     font-weight: normal;
 }
 .tail-select .select-dropdown ul li:first-of-type{
-    margin-top: 0.5rem;
+    /*margin-top: 0.5rem;*/
 }
 .tail-select .select-dropdown ul li:last-of-type{
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;*/
 }
 .tail-select .select-dropdown ul li.optgroup-title{
     color: rgba(52, 58, 64, 0.7);
@@ -368,26 +373,25 @@
 }
 /* Selected */
 .tail-select .select-dropdown ul li.dropdown-option.selected{
-    color: #0088CC;
+    color: #32CD32;
     background-color: transparent;
 }
 .tail-select .select-dropdown ul li.dropdown-option.selected:before{
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
-                9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij48cGF0aCBkPSJNMTIgNWwtOCA4LTQtN\
-                CAxLjUtMS41TDQgMTBsNi41LTYuNUwxMiA1eiIvPjwvc3ZnPg==");
+    background-image: url("img/select-green.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
 }
 .tail-select .select-dropdown ul li.dropdown-option.selected .option-description{
-    color: rgba(52, 58, 64, 0.7);
+    /*color: rgba(52, 58, 64, 0.7);*/
 }
 /* Unselect */
 .tail-select.deselect .select-dropdown ul li.dropdown-option.selected:hover:before,
 .tail-select.multiple .select-dropdown ul li.dropdown-option.selected:hover:before,
 .tail-select.deselect .select-dropdown ul li.dropdown-option.selected.hover:before,
 .tail-select.multiple .select-dropdown ul li.dropdown-option.selected.hover:before{
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC\
-                                9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij48cGF0aCBkPSJNNy40OCA4bDMuNzUgM\
-                                y43NS0xLjQ4IDEuNDhMNiA5LjQ4bC0zLjc1IDMuNzUtMS40OC0xLjQ4TDQuNTIgOCAuNzcgNC4yNWwxLjQ4LTEuNDhMNiA2\
-                                LjUybDMuNzUtMy43NSAxLjQ4IDEuNDhMNy40OCA4eiIvPjwvc3ZnPg==");
+    background-image: url("img/unselect-red.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
 }
 /* Hover */
 .tail-select .select-dropdown ul li.dropdown-option{

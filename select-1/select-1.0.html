@@ -18,7 +18,7 @@
         h1{
             font-size: 22px;
             font-weight: bold;
-            color: #1E90FF;
+            color: #4682B4;
             text-transform: uppercase;
             text-decoration: underline; 
         }
@@ -31,7 +31,20 @@
         p{
             font-size: 14px;
             font-weight: normal;
-            color: #1E90FF;
+            color: #696969;
+        }
+        .caixa-multiselecoes{
+            border: 1px solid #FF8C00;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .caixa-multiselecoes h3{
+            width: 100%;
+            border-bottom: 1px solid #FF8C00;
+            font-size: 16px;
+            font-weight: normal;
+            color: #FFA500;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -40,14 +53,13 @@
     <!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
     <div class="container">
         <div class="row mt-4">
-            <h1 class="w-100 text-center">Simples</h1>
-            <div class="col-md-3 col-12"></div>            
+            <h1 class="w-100 ml-3">Simples</h1>
             <div class="col-md-3 col-12 mt-3">
                 <h2 class="m-0 p-0">Selecione uma cor:</h2>
-                <p>Nenhum selecionado</p>
+                <p>* Nenhum selecionado</p>
                 <select id="select-simples-1">
-                    <option value=""></option>
-                    <optgroup label="Cores Primárias">
+                    <option></option>                    
+                    <optgroup label="Cores Primárias">                       
                         <option>Vermelho</option>
                         <option>Amarelo</option>
                         <option>Azul</option>
@@ -63,12 +75,12 @@
                         <option data-description="Azul + Magenta">Violeta</option>
                         <option data-description="Vermelho + Magenta">Rosa</option>
                         <option data-description="Verde + Ciano">Turquesa</option>
-                    </optgroup>
+                    </optgroup>                    
                 </select>
             </div>
             <div class="col-md-3 col-12 mt-3">
                 <h2 class="m-0 p-0">Selecione uma cor:</h2>
-                <p>Azul selecionado</p>
+                <p>* Azul selecionado</p>
                 <select id="select-simples-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -89,10 +101,9 @@
                     </optgroup>
                 </select>
             </div>
-            <div class="col-md-3 col-12"></div> 
         </div>
         <div class="row mt-4">
-            <h1 class="w-100 text-center">Múltiplo</h1>
+            <h1 class="w-100 ml-3">Múltiplo</h1>
             <div class="col-md-3 col-12 mt-3">
                 <h2>Selecione várias cores:</h2>
                 <select id="select-multiplo-1" multiple>
@@ -116,7 +127,7 @@
                 </select> 
             </div>
             <div class="col-md-3 col-12 mt-3">
-                <h2>Selecione uma cor:</h2>
+                <h2>Selecione várias cores:</h2>
                 <select multiple id="select-multiplo-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -138,7 +149,9 @@
                 </select>
             </div>          
             <div class="col-md-3 col-12 mt-3">
-                <div class="selecoes-simples"></div>
+                <div class="caixa-multiselecoes">
+                    <h3>Seleções:</h3>
+                </div>
             </div>          
             <div class="col-md-3 col-12 mt-3">
                 <h2>Selecione várias cores:</h2>
@@ -202,7 +215,7 @@
                 hideSelected: true,
                 hideDisabled: true,
                 multiShowCount: false,
-                multiContainer: '.selecoes-simples'
+                multiContainer: '.caixa-multiselecoes'
             });
             tail.select("#select-multiplo-3", {
                 locale: "pt_BR",
