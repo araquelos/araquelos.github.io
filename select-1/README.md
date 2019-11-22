@@ -1,5 +1,5 @@
 # Select `1`
-> Seleção personalizada (pesquisa, removível, múltipla) com Bootstrap 4.
+> Seleção personalizada simples e múltipla, com pesquisa e seleção removível, utilizando Bootstrap 4 e o script 'tail select'.
 
 ![](select-1.png)
 
