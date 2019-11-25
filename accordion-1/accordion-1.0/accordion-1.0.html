@@ -10,52 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
     <!-- Outros Estilos -->
-    <style type="text/css">
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .accordion {
-            background-color: transparent;
-            font: bold 20px 'Barlow Semi Condensed', sans-serif;
-            color: #1E90FF;
-            cursor: pointer;
-            padding-bottom: 17px;
-            padding-top: 24px;
-            width: 100%;
-            text-align: left;
-            border: none;
-            outline: none;
-            transition: 0.4s;
-            text-transform: uppercase;
-        }
-        .accordion:after {
-            font-family: FontAwesome;            
-            content: '\f107';
-            font-size: 26px;
-            color: #4682B4;
-            float: right;
-        }
-        .active:after {
-            font-family: FontAwesome;
-            content: "\f106";
-        }
-        button:focus {
-            outline: none;
-        }
-        .panel {
-            padding: 0 5px;
-            background-color: transparent;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            border-bottom: 1px solid #4682B4;                
-        }
-        .panel p{
-            font: normal 16px 'Barlow Semi Condensed', sans-serif;
-            color: #363636;
-        } 
-    </style>
+    <link rel="stylesheet" type="text/css" href="accordion-1.0.css">
 </head>
 
 <body>
@@ -83,25 +38,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Outros Scrips -->
-    <script type="text/javascript">
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++)
-        {
-            acc[i].addEventListener("click", function()
-            {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } 
-                else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
-
+    <script type="text/javascript" src="accordion-1.0.js"></script>
 </body>
 </html>

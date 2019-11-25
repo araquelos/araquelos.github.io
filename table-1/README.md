@@ -5,7 +5,7 @@
 
 #### Versões
                 
-+ [1.0](https://araquelos.github.io/table-1/table-1.0.html)
++ [1.0](https://araquelos.github.io/table-1/table-1.0/table-1.0.html)
 
 #### Componentes
                 

@@ -5,7 +5,7 @@
 
 #### Versões
                 
-+ [1.0](https://araquelos.github.io/accordion-1/accordion-1.0.html)
++ [1.0](https://araquelos.github.io/accordion-1/accordion-1.0/accordion-1.0.html)
 
 #### Componentes
                 

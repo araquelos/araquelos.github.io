@@ -10,43 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
     <!-- Outros Estilos -->
-    <link href="css/bootstrap4/tail.select-default.css" rel="stylesheet">
-    <style type="text/css">
-        body{
-            font-family: 'Barlow Semi Condensed', sans-serif;
-        }
-        h1{
-            font-size: 22px;
-            font-weight: bold;
-            color: #4682B4;
-            text-transform: uppercase;
-            text-decoration: underline; 
-        }
-        h2{
-            font-size: 16px;
-            font-weight: normal;
-            color: #1E90FF;
-            text-transform: uppercase;
-        }
-        p{
-            font-size: 14px;
-            font-weight: normal;
-            color: #696969;
-        }
-        .caixa-multiselecoes{
-            border: 1px solid #FF8C00;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .caixa-multiselecoes h3{
-            width: 100%;
-            border-bottom: 1px solid #FF8C00;
-            font-size: 16px;
-            font-weight: normal;
-            color: #FFA500;
-            text-transform: uppercase;
-        }
-    </style>
+    <link href="../css/bootstrap4/tail.select-default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="select-1.0.css">
 </head>
 
 <body>
@@ -185,49 +150,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Outros Scrips -->
-    <script src="js/tail.select-full.min.js"></script>
-    <script src="langs/tail.select-pt_BR.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function(){
-            tail.select("#select-simples-1", {
-                locale: "pt_BR",
-                search: true,
-                descriptions: true,
-                deselect: true,
-            });
-            tail.select("#select-simples-2", {
-                locale: "pt_BR",
-                search: true,
-                descriptions: true,
-                deselect: true
-            });
-            tail.select("#select-multiplo-1", {
-                locale: "pt_BR",
-                search: true,
-                descriptions: true,
-                multiLimit: 3
-            });
-            tail.select("#select-multiplo-2", {
-                locale: "pt_BR",
-                search: true,
-                descriptions: true,
-                multiLimit: 3,
-                hideSelected: true,
-                hideDisabled: true,
-                multiShowCount: false,
-                multiContainer: '.caixa-multiselecoes'
-            });
-            tail.select("#select-multiplo-3", {
-                locale: "pt_BR",
-                search: true,
-                descriptions: true,
-                multiLimit: 3,
-                hideSelected: true,
-                hideDisabled: true,
-                multiShowCount: false,
-                multiContainer: true
-            });
-        });
-    </script>
+    <script src="../js/tail.select-full.min.js"></script>
+    <script src="../langs/tail.select-pt_BR.js"></script>
+    <script type="text/javascript" src="select-1.0.js"></script>
 </body>
 </html>

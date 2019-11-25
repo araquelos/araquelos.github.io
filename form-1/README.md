@@ -5,8 +5,8 @@
 
 #### Versões
                 
-+ [1.0](https://araquelos.github.io/form-1/form-1.0.html)
-+ [1.1](https://araquelos.github.io/form-1/form-1.1.html)
++ [1.0](https://araquelos.github.io/form-1/form-1.0/form-1.0.html)
++ [1.1](https://araquelos.github.io/form-1/form-1.1/form-1.1.html)
 
 #### Componentes
                 

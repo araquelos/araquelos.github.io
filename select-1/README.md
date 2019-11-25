@@ -5,7 +5,7 @@
 
 #### Versões
                 
-+ [1.0](https://araquelos.github.io/select-1/select-1.0.html)
++ [1.0](https://araquelos.github.io/select-1/select-1.0/select-1.0.html)
 
 #### Componentes
                 

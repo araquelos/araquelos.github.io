@@ -19,7 +19,7 @@ Default Theme
 	color: #FFFFFF;
 	background-color: #1E90FF;
 	border-collapse: collapse;
-	border-bottom: none;
+	border-bottom: 2px solid #00FFFF;
 	padding: 0;
 	outline:none;
 }
@@ -41,13 +41,13 @@ Default Theme
 .tablesorter-default thead .tablesorter-headerSortUp,
 .tablesorter-default thead .tablesorter-headerAsc {
 	background-image: url(img/up-arrow-white.svg);
-	border-bottom: #00FFFF 2px solid;
+	border-bottom: #00FF00 2px solid;
 }
 .tablesorter-default thead .headerSortDown,
 .tablesorter-default thead .tablesorter-headerSortDown,
 .tablesorter-default thead .tablesorter-headerDesc {
 	background-image: url(img/down-arrow-white.svg);
-	border-bottom: #FD5F00 2px solid;
+	border-bottom: #FF4500 2px solid;
 }
 .tablesorter-default thead .sorter-false {
 	background-image: none;
@@ -77,7 +77,7 @@ Default Theme
 .tablesorter-default tbody > tr.even:hover > td,
 .tablesorter-default tbody > tr.odd:hover > td {
 	background-color: #87CEFA;
-	color: #4682B4;
+	color: #FFFFFF;
 }
 
 /* table processing indicator */
@@ -98,13 +98,15 @@ Default Theme
 
 /* Column Widget - column sort colors */
 .tablesorter-default tr.odd td.primary {
-	background-color: #00BFFF;
-	color: #FFFFFF;
+	/*background-color: #00BFFF;
+	color: #FFFFFF;*/
+	font-weight: bold;
 }
 .tablesorter-default td.primary,
 .tablesorter-default tr.even td.primary {
-	background-color: #87CEEB;
-	color: #FFFFFF;
+	/*background-color: #87CEEB;
+	color: #FFFFFF;*/
+	font-weight: bold;
 }
 .tablesorter-default tr.odd td.secondary {
 	background-color: #d9d9d9;
