@@ -7,5 +7,6 @@ COMPONENTE | VERSÃO | GITHUB
 ------------- | ------------- | -------------
 Accordion | `1` | [Baixar](https://github.com/araquelos/araquelos.github.io/tree/master/accordion-1)
 Form | `1` | [Baixar](https://github.com/araquelos/araquelos.github.io/tree/master/form-1)
+Navbar | `1` | [Baixar](https://github.com/araquelos/araquelos.github.io/tree/master/navbar-1)
 Select | `1` | [Baixar](https://github.com/araquelos/araquelos.github.io/tree/master/select-1)
 Table | `1` | [Baixar](https://github.com/araquelos/araquelos.github.io/tree/master/table-1)

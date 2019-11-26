@@ -10,10 +10,10 @@
  |  @copyright  Copyright © 2014 - 2019 SamBrishes, pytesNET <info@pytes.net>
  */
 
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto&display=swap');
 
-/* @start GENERAL */
-.tail-select, .tail-select *, .tail-select *:before, .tail-select *:after{
+ /* @start GENERAL */
+ .tail-select, .tail-select *, .tail-select *:before, .tail-select *:after{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

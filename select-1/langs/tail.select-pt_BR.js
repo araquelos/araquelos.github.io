@@ -12,27 +12,27 @@
  |  Translator:     Igor - (https://github.com/igorcm)
  |  GitHub:         https://github.com/pytesNET/tail.select/pull/34
  */
-;(function(factory){
+ ;(function(factory){
    if(typeof(define) == "function" && define.amd){
-       define(function(){
-           return function(select){ factory(select); };
-       });
+     define(function(){
+       return function(select){ factory(select); };
+     });
    } else {
-       if(typeof(window.tail) != "undefined" && window.tail.select){
-           factory(window.tail.select);
-       }
+     if(typeof(window.tail) != "undefined" && window.tail.select){
+       factory(window.tail.select);
+     }
    }
-}(function(select){
-    select.strings.register("pt_BR", {
-        all: "Todas",
-        none: "Nenhuma",
-        empty: "Nenhuma opção disponível",
-        emptySearch: "Nenhuma opção encontrada",
-        limit: "Limite de :limit opções atingido",
-        placeholder: "Escolha uma opção...",
-        placeholderMulti: "Escolha :limit opções...",
-        search: "Buscar...",
-        disabled: "Campo desativado"
-    });
-    return select;
+ }(function(select){
+  select.strings.register("pt_BR", {
+    all: "Todas",
+    none: "Nenhuma",
+    empty: "Nenhuma opção disponível",
+    emptySearch: "Nenhuma opção encontrada",
+    limit: "Limite de :limit opções atingido",
+    placeholder: "Escolha uma opção...",
+    placeholderMulti: "Escolha :limit opções...",
+    search: "Buscar...",
+    disabled: "Campo desativado"
+  });
+  return select;
 }));
