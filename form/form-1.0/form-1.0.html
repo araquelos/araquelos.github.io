@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Form 1.1</title>
+	<title>Form 1.0</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap 4 CSS -->
@@ -10,49 +11,63 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
 	<!-- Outros Estilos -->
-	<link rel="stylesheet" type="text/css" href="form-1.1.css">
+	<link rel="stylesheet" type="text/css" href="form-1.0.css">
 </head>
 
 <body>
+	<div class="text-center mb-3">
+		<h1>Form 1.0</h1>
+		<p>Formulário responsivo com validador de campos obrigatórios do Bootstrap 4 e máscaras fixas nos campos numéricos em JavaScript.</p>
+		<a href="https://araquelos.github.io/">Início</a> | <a
+			href="https://github.com/araquelos/araquelos.github.io/tree/master/form/form-1.0"
+			target="_blank">Código <i class="fa fa-external-link"></i>
+		</a>
+		<p>---------- x ----------</p>
+	</div>
 	<!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
 	<div class="container">
-		<form action="" class="was-validated"  autocomplete="off">
+		<form action="" class="was-validated" autocomplete="off">
 			<div class="row">
 				<div class="col-md-4 col-12">
 					<!-- NOME -->
 					<div class="form-group">
 						<h2 for="input-nome">Nome</h2>
-						<input type="text" class="form-control" id="input-nome" placeholder="Informe o seu nome completo" name="nome" required>
+						<input type="text" class="form-control" id="input-nome"
+							placeholder="Informe o seu nome completo" name="nome" required>
 						<div class="valid-feedback">Válido!</div>
 						<div class="invalid-feedback">* Campo Obrigatório</div>
 					</div>
 					<!-- E-MAIL -->
 					<div class="form-group">
 						<h2 for="input-email">E-mail</h2>
-						<input type="email" class="form-control" id="input-email" placeholder="Informe o seu e-mail" name="email" required>
+						<input type="email" class="form-control" id="input-email" placeholder="Informe o seu e-mail"
+							name="email" required>
 						<div class="valid-feedback">Válido!</div>
 						<div class="invalid-feedback">* Campo Obrigatório</div>
 					</div>
 					<!-- DATA DE NASCIMENTO -->
 					<div class="form-group">
 						<h2 for="input-dnasc">Data de Nascimento</h2>
-						<input type="text" class="form-control" id="input-dnasc" placeholder="Informe a sua data de nascimento" name="dnasc" required>
+						<input type="text" class="form-control" id="input-dnasc"
+							placeholder="Informe a sua data de nascimento" name="dnasc" required>
 						<div class="valid-feedback">Válido!</div>
 						<div class="invalid-feedback">* Campo Obrigatório</div>
-					</div>													
+					</div>
 				</div>
-				<div class="col-md-4 col-12">	
+				<div class="col-md-4 col-12">
 					<!-- TELEFONE -->
 					<div class="form-group">
 						<h2 for="input-telefone">Telefone</h2>
-						<input type="tel" class="form-control" id="input-telefone" placeholder="Informe o seu telefone" name="telefone" required>
+						<input type="tel" class="form-control" id="input-telefone" placeholder="Informe o seu telefone"
+							name="telefone" required>
 						<div class="valid-feedback">Válido!</div>
 						<div class="invalid-feedback">* Campo Obrigatório</div>
 					</div>
 					<!-- CPF -->
 					<div class="form-group">
 						<h2 for="input-cpf">CPF</h2>
-						<input type="text" class="form-control" id="input-cpf" placeholder="Informe o seu CPF" name="cpf" required>
+						<input type="text" class="form-control" id="input-cpf" placeholder="Informe o seu CPF"
+							name="cpf" required>
 						<div class="valid-feedback">Válido!</div>
 						<div class="invalid-feedback">* Campo Obrigatório</div>
 					</div>
@@ -85,7 +100,8 @@
 					<!-- SENHA -->
 					<div class="form-group" id="exibir-senha" style="display: none">
 						<h2 for="input-senha">Senha</h2>
-						<input type="password" class="form-control" id="input-senha" placeholder="Digite a sua senha" name="senha" disabled required>
+						<input type="password" class="form-control" id="input-senha" placeholder="Digite a sua senha"
+							name="senha" disabled required>
 						<div class="valid-feedback">Válido!</div>
 						<div class="invalid-feedback">* Campo Obrigatório.</div>
 					</div>
@@ -106,7 +122,8 @@
 			<div class="row">
 				<div class="col-12 text-center">
 					<button type="submit" class="btn btn-enviar"><i class="fa fa-check-circle-o"></i> Enviar</button>
-					<button type="reset" class="btn btn-limpar ml-2" id="btn-reset"><i class="fa fa-ban"></i> Limpar</button>
+					<button type="reset" class="btn btn-limpar ml-2" id="btn-reset"><i class="fa fa-ban"></i>
+						Limpar</button>
 				</div>
 			</div>
 		</form>
@@ -118,8 +135,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<!-- Outros Scrips -->
-	<script type="text/javascript" src="../js/jquery.mask.js"></script>
-	<script type="text/javascript" src="../js/jquery.mask.min.js"/></script>
-	<script type="text/javascript" src="form-1.1.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.2.6.pack.js"></script>
+	<script type="text/javascript" src="../js/jquery.maskedinput-1.1.4.pack.js" />
+	</script>
+	<script type="text/javascript" src="form-1.0.js"></script>
 </body>
+
 </html>
