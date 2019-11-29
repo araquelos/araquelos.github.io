@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Select 1.0</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Fontes -->
@@ -15,16 +16,25 @@
 </head>
 
 <body>
+    <div class="text-center mb-3">
+        <h1>Select 1.0</h1>
+        <p>Seleção personalizada simples e múltipla, com pesquisa e seleção removível, utilizando Bootstrap 4 e o script 'tail select'.</p>
+        <a href="https://araquelos.github.io/">Início</a> | <a
+            href="https://github.com/araquelos/araquelos.github.io/tree/master/select/select-1.0" target="_blank">Código
+            <i class="fa fa-external-link"></i>
+        </a>
+        <p>---------- x ----------</p>
+    </div>
     <!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
     <div class="container">
         <div class="row mt-4">
-            <h1 class="w-100 ml-3">Simples</h1>
+            <h2 class="w-100 ml-3">Simples</h2>
             <div class="col-md-3 col-12 mt-3">
-                <h2 class="m-0 p-0">Selecione uma cor:</h2>
-                <p>* Nenhum selecionado</p>
+                <h3 class="m-0 p-0">Selecione uma cor:</h3>
+                <span>* Nenhum selecionado</span>
                 <select id="select-simples-1">
-                    <option></option>                    
-                    <optgroup label="Cores Primárias">                       
+                    <option></option>
+                    <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
                         <option>Amarelo</option>
                         <option>Azul</option>
@@ -40,12 +50,12 @@
                         <option data-description="Azul + Magenta">Violeta</option>
                         <option data-description="Vermelho + Magenta">Rosa</option>
                         <option data-description="Verde + Ciano">Turquesa</option>
-                    </optgroup>                    
+                    </optgroup>
                 </select>
             </div>
             <div class="col-md-3 col-12 mt-3">
-                <h2 class="m-0 p-0">Selecione uma cor:</h2>
-                <p>* Azul selecionado</p>
+                <h3 class="m-0 p-0">Selecione uma cor:</h3>
+                <span>* Azul selecionado</span>
                 <select id="select-simples-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -68,9 +78,9 @@
             </div>
         </div>
         <div class="row mt-4">
-            <h1 class="w-100 ml-3">Múltiplo</h1>
+            <h2 class="w-100 ml-3">Múltiplo</h2>
             <div class="col-md-3 col-12 mt-3">
-                <h2>Selecione várias cores:</h2>
+                <h3>Selecione várias cores:</h3>
                 <select id="select-multiplo-1" multiple>
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -89,10 +99,10 @@
                         <option data-description="Vermelho + Magenta">Rosa</option>
                         <option data-description="Verde + Ciano">Turquesa</option>
                     </optgroup>
-                </select> 
+                </select>
             </div>
             <div class="col-md-3 col-12 mt-3">
-                <h2>Selecione várias cores:</h2>
+                <h3>Selecione várias cores:</h3>
                 <select multiple id="select-multiplo-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -112,14 +122,14 @@
                         <option data-description="Verde + Ciano">Turquesa</option>
                     </optgroup>
                 </select>
-            </div>          
+            </div>
             <div class="col-md-3 col-12 mt-3">
                 <div class="caixa-multiselecoes">
-                    <h3>Seleções:</h3>
+                    <h4>Seleções:</h4>
                 </div>
-            </div>          
+            </div>
             <div class="col-md-3 col-12 mt-3">
-                <h2>Selecione várias cores:</h2>
+                <h3>Selecione várias cores:</h3>
                 <select id="select-multiplo-3" multiple>
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -138,8 +148,8 @@
                         <option data-description="Vermelho + Magenta">Rosa</option>
                         <option data-description="Verde + Ciano">Turquesa</option>
                     </optgroup>
-                </select>  
-            </div>                    
+                </select>
+            </div>
         </div>
     </div>
 
@@ -154,4 +164,5 @@
     <script src="../langs/tail.select-pt_BR.js"></script>
     <script type="text/javascript" src="select-1.0.js"></script>
 </body>
+
 </html>

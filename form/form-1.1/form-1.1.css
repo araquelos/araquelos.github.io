@@ -30,13 +30,13 @@
 }
 .was-validated .form-control:valid,
 .was-validated .custom-select:valid { 
-	background: url("img/valid-green.svg") no-repeat right center;
+	background: url("../img/valid-green.svg") no-repeat right center;
 	background-size: 15px 15px;
 	border-bottom: 1px solid #32CD32;
 }
 .was-validated .form-control:valid:focus,
 .was-validated .custom-select:valid:focus {
-	background: url("img/edit-green.svg") no-repeat right center;
+	background: url("../img/edit-green.svg") no-repeat right center;
 	background-size: 15px 15px;
 	border-bottom: 2px solid #32CD32;
 	box-shadow: none;
@@ -45,13 +45,13 @@
 }
 .was-validated .form-control:invalid,
 .was-validated .custom-select:invalid { 
-	background: url("img/invalid-red.svg") no-repeat right center;
+	background: url("../img/invalid-red.svg") no-repeat right center;
 	background-size: 15px 15px;
 	border-bottom: 1px solid #FF4500;
 }
 .was-validated .form-control:invalid:focus,
 .was-validated .custom-select:invalid:focus {
-	background: url("img/edit-red.svg") no-repeat right center;
+	background: url("../img/edit-red.svg") no-repeat right center;
 	background-size: 15px 15px;
 	border-bottom: 2px solid #FF4500;
 	box-shadow: none;

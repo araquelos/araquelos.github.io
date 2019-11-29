@@ -1,20 +1,20 @@
-body{
+.container{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
-h1{
+h2{
     font-size: 22px;
     font-weight: bold;
     color: #4682B4;
     text-transform: uppercase;
     text-decoration: underline; 
 }
-h2{
+h3{
     font-size: 16px;
     font-weight: normal;
     color: #1E90FF;
     text-transform: uppercase;
 }
-p{
+span{
     font-size: 14px;
     font-weight: normal;
     color: #696969;
@@ -24,7 +24,7 @@ p{
     padding: 10px;
     border-radius: 5px;
 }
-.caixa-multiselecoes h3{
+.caixa-multiselecoes h4{
     width: 100%;
     border-bottom: 1px solid #FF8C00;
     font-size: 16px;
