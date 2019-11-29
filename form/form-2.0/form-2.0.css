@@ -1,5 +1,5 @@
 body {
-  background: #95a5a6;
+  /* background: #95a5a6; */
 }
 
 .custom-form {
@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   max-width: 360px;
   margin: 40px auto 40px;
-  background: #fff;
+  background: #E6E6FA;
   padding: 40px;
   border-radius: 4px;
 }

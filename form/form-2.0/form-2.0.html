@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Form 2.0</title>
 	<meta charset="utf-8">
@@ -8,23 +9,32 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<!-- Fontes -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<!-- Outros Estilos -->
 	<link rel="stylesheet" type="text/css" href="form-2.0.css">
 </head>
 
 <body>
+	<div class="text-center mb-3">
+		<h1>Form 2.0</h1>
+		<p>Formulário animado com Bootstrap 4 e AngularJS para telas de login.</p>
+		<a href="https://araquelos.github.io/">Início</a> | <a
+			href="https://github.com/araquelos/araquelos.github.io/tree/master/form/form-2.0"
+			target="_blank">Código <i class="fa fa-external-link"></i>
+		</a>
+		<p>---------- x ----------</p>
+	</div>
 	<!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
 	<div ng-app="">
 		<div>
 			<form action="#" class="custom-form">
 				<h3 class="text-center">Animated Form</h3>
 				<div class="form-group" ng-class="{'not-empty': userName.length}">
-					<input type="text" class="form-control" name="user"  id="user" ng-model="userName"/>
+					<input type="text" class="form-control" name="user" id="user" ng-model="userName" />
 					<label for="user" class="animated-label">Username</label>
 				</div>
 				<div class="form-group" ng-class="{'not-empty': passWord.length}">
-					<input type="password" class="form-control" name="pass"  id="pass" ng-model="passWord"/>
+					<input type="password" class="form-control" name="pass" id="pass" ng-model="passWord" />
 					<label for="pass" class="animated-label">Password</label>
 				</div>
 				<div class="submit">
@@ -41,4 +51,5 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
 </body>
+
 </html>
