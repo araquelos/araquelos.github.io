@@ -1,5 +1,5 @@
 # Front-End
-Meus projetos e modelos de componentes em HTML, CSS e JavaScript.
+> Componentes e Templates.
 
 ## Componentes
 
