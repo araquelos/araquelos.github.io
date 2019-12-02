@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Form 3.0</title>
 	<meta charset="utf-8">
@@ -16,114 +17,68 @@
 </head>
 
 <body>
-	<!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
-	<div ng-controller="AppCtrl as ctrl" class="md-padding selectdemoBasicUsage" ng-cloak="" layout="column" ng-app="MyApp">
-
-		<p>
-			The <code>˂md-select˃</code> component can be used within a
-			<code>˂md-input-container˃</code> or as a stand alone component by using the
-			<code>md-no-underline</code> class.
-		</p>
-
-		<md-card>
-			<md-card-title>
-				<md-card-title-text>
-					<span class="md-headline">Account Preferences</span>
-					<span class="md-subhead">Tell us a little about you.</span>
-				</md-card-title-text>
-			</md-card-title>
-
-			<md-card-content>
-				<div layout="row">
-					<md-input-container>
-						<label>Street Name</label>
-						<input>
-					</md-input-container>
-
-					<md-input-container>
-						<label>City</label>
-						<input>
-					</md-input-container>
-
-					<md-input-container>
-						<label>State</label>
-						<md-select ng-model="ctrl.userState">
-							<md-option><em>None</em></md-option>
-							<md-option value="ananindeua">Ananindeua</md-option>
-							<md-option value="sword">Sword</md-option>
-							<md-option value="wand">Wand</md-option>
-							<md-option value="pen">Pen?</md-option>
-						</md-select>
-					</md-input-container>
-				</div>
-			</md-card-content>
-		</md-card>
-
-		<md-card>
-			<md-card-title>
-				<md-card-title-text>
-					<span class="md-headline">Battle Preferences</span>
-					<span class="md-subhead">Choose wisely if you want to win.</span>
-				</md-card-title-text>
-			</md-card-title>
-
-			<md-card-content>
-				<div layout="row" layout-align="space-between center">
-					<span>What is your favorite weapon?</span>
-					<md-select ng-model="weapon" placeholder="Weapon" class="md-no-underline">
-						<md-option value="axe">Axe</md-option>
-						<md-option value="sword">Sword</md-option>
-						<md-option value="wand">Wand</md-option>
-						<md-option value="pen">Pen?</md-option>
-					</md-select>
-				</div>
-
-				<div layout="row" layout-align="space-between center">
-					<span>What armor do you wear?</span>
-					<md-select ng-model="armor" placeholder="Armor" class="md-no-underline" required="" md-no-asterisk="false">
-						<md-option value="cloth">Cloth</md-option>
-						<md-option value="leather">Leather</md-option>
-						<md-option value="chain">Chainmail</md-option>
-						<md-option value="plate">Plate</md-option>
-					</md-select>
-				</div>
-
-				<div layout="row" layout-align="space-between center">
-					<span>How do you refresh your magic?</span>
-					<md-select ng-model="drink" placeholder="Drink" class="md-no-underline">
-						<md-option value="water">Water</md-option>
-						<md-option value="juice">Juice</md-option>
-						<md-option value="milk">Milk</md-option>
-						<md-option value="wine">Wine</md-option>
-						<md-option value="mead">Mead</md-option>
-					</md-select>
-				</div>
-			</md-card-content>
-		</md-card>
-
+	<div class="text-center mb-3">
+		<h1>Form 3.0</h1>
+		<p>Formulário com os compomentes <code>input</code> e <code>select</code> do AngularJS.</p>
+		<a href="https://araquelos.github.io/">Início</a> | <a
+			href="https://github.com/araquelos/araquelos.github.io/tree/master/form/form-3.0" target="_blank">Código <i
+				class="fa fa-external-link"></i>
+		</a>
+		<p>---------- x ----------</p>
 	</div>
+	<!-------------------------------------------------- INÍCIO do CÓDIGO -------------------------------------------------->
+	<div class="container">
+		<div ng-controller="AppCtrl as ctrl" class="md-padding selectdemoBasicUsage" ng-cloak="" layout="column"
+			ng-app="MyApp">
+			<md-card>
+				<md-card-title>
+					<md-card-title-text>
+						<span class="md-headline">Preferências de Conta</span>
+						<span class="md-subhead">Conte-nos um pouco sobre você.</span>
+					</md-card-title-text>
+				</md-card-title>
+				<md-card-content>
+					<div layout="row">
+						<md-input-container>
+							<label>Nome da Rua</label>
+							<input>
+						</md-input-container>
+						<md-input-container>
+							<label>Cidade</label>
+							<input>
+						</md-input-container>
+						<md-input-container>
+							<label>Estado</label>
+							<md-select ng-model="ctrl.userState">
+								<md-option><em>Nenhum</em></md-option>
+								<md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev"
+									ng-disabled="$index === 1">
+									{{state.abbrev}}
+								</md-option>
+							</md-select>
+						</md-input-container>
+					</div>
+				</md-card-content>
+			</md-card>
+		</div>
+	</div>
+	<!-------------------------------------------------- FINAL do CÓDIGO -------------------------------------------------->
 
-<!--
-Copyright 2018 Google LLC. All Rights Reserved. 
-Use of this source code is governed by an MIT-style license that can be found
-in the LICENSE file at http://material.angularjs.org/HEAD/license.
--->
-<!-------------------------------------------------- FINAL do CÓDIGO -------------------------------------------------->
-
-<!-- Scripts jQuery e Bootstrap -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- Outros Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-aria.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-messages.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
-<script src="https://gitcdn.xyz/cdn/angular/bower-material/v1.1.20/angular-material.js"></script>
-<script src="form-3.0.js"></script>
+	<!-- Scripts jQuery e Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Outros Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-messages.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+	<script src="https://gitcdn.xyz/cdn/angular/bower-material/v1.1.20/angular-material.js"></script>
+	<script src="form-3.0.js"></script>
 
 </body>
+
 </html>

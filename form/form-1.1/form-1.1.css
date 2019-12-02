@@ -81,7 +81,7 @@
 	margin-top: 5px;
 }
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
-	background-image: url("img/check-blue.svg"); 
+	background-image: url("../img/check-blue.svg"); 
 	/* --------------------------------------------------------------------------------------------------------------------------- */
 }
 .was-validated .btn-enviar{
