@@ -18,7 +18,8 @@
 <body>
     <div class="text-center mb-3">
         <h1>Select 1.0</h1>
-        <p>Seleção personalizada simples e múltipla, com pesquisa e seleção removível, utilizando Bootstrap 4 e o JavaScript 'tail select'.</p>
+        <p>Seleção personalizada simples e múltipla, com pesquisa e seleção removível, utilizando Bootstrap 4 e o
+            JavaScript 'tail select'.</p>
         <a href="https://araquelos.github.io/">Início</a> | <a
             href="https://github.com/araquelos/araquelos.github.io/tree/master/select/select-1.0" target="_blank">Código
             <i class="fa fa-external-link"></i>
@@ -31,7 +32,7 @@
             <h2 class="w-100 ml-3">Simples</h2>
             <div class="col-md-3 col-12 mt-3">
                 <h3 class="m-0 p-0">Selecione uma cor:</h3>
-                <span>* Nenhum selecionado</span>
+                <span>* Nenhum selecionado</span><br>
                 <select id="select-simples-1">
                     <option></option>
                     <optgroup label="Cores Primárias">
@@ -55,7 +56,7 @@
             </div>
             <div class="col-md-3 col-12 mt-3">
                 <h3 class="m-0 p-0">Selecione uma cor:</h3>
-                <span>* Azul selecionado</span>
+                <span>* Azul selecionado</span><br>
                 <select id="select-simples-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -103,6 +104,28 @@
             </div>
             <div class="col-md-3 col-12 mt-3">
                 <h3>Selecione várias cores:</h3>
+                <select id="select-multiplo-3" multiple>
+                    <optgroup label="Cores Primárias">
+                        <option>Vermelho</option>
+                        <option>Amarelo</option>
+                        <option>Azul</option>
+                    </optgroup>
+                    <optgroup label="Cores Secundárias">
+                        <option data-description="Azul + Amarelo">Verde</option>
+                        <option data-description="Vermelho + Amarelo">Laranja</option>
+                        <option data-description="Azul + Vermelho">Roxo</option>
+                    </optgroup>
+                    <optgroup label="Cores Terciárias">
+                        <option data-description="Verde + Amarelo">Oliva</option>
+                        <option data-description="Azul + Ciano">Celeste</option>
+                        <option data-description="Azul + Magenta">Violeta</option>
+                        <option data-description="Vermelho + Magenta">Rosa</option>
+                        <option data-description="Verde + Ciano">Turquesa</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="col-md-3 col-12 mt-3">
+                <h3>Selecione várias cores:</h3>
                 <select multiple id="select-multiplo-2">
                     <optgroup label="Cores Primárias">
                         <option>Vermelho</option>
@@ -127,28 +150,6 @@
                 <div class="caixa-multiselecoes">
                     <h4>Seleções:</h4>
                 </div>
-            </div>
-            <div class="col-md-3 col-12 mt-3">
-                <h3>Selecione várias cores:</h3>
-                <select id="select-multiplo-3" multiple>
-                    <optgroup label="Cores Primárias">
-                        <option>Vermelho</option>
-                        <option>Amarelo</option>
-                        <option>Azul</option>
-                    </optgroup>
-                    <optgroup label="Cores Secundárias">
-                        <option data-description="Azul + Amarelo">Verde</option>
-                        <option data-description="Vermelho + Amarelo">Laranja</option>
-                        <option data-description="Azul + Vermelho">Roxo</option>
-                    </optgroup>
-                    <optgroup label="Cores Terciárias">
-                        <option data-description="Verde + Amarelo">Oliva</option>
-                        <option data-description="Azul + Ciano">Celeste</option>
-                        <option data-description="Azul + Magenta">Violeta</option>
-                        <option data-description="Vermelho + Magenta">Rosa</option>
-                        <option data-description="Verde + Ciano">Turquesa</option>
-                    </optgroup>
-                </select>
             </div>
         </div>
     </div>

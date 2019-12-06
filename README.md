@@ -1,7 +1,7 @@
 # Front-End
 > Componentes e Templates.
 
-## Componentes
+## &gt; Componentes
 
 COMPONENTE | STATUS | ÚLTIMA VERSÃO
 :------------- | :-------------: | :-------------:

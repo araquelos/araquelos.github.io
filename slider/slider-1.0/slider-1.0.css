@@ -37,35 +37,60 @@ md-input-container.md-input-focused .md-input,
 
 md-input-container .md-input{
     width: 60px;
+    font-family: 'Acme', sans-serif;
 }
 
-/* md-input-container .md-default-theme .md-input, md-input-container .md-input{
-    color: blue;
-    border-color: yellow;
-} */
-
-md-input-container.md-default-theme .md-placeholder, md-input-container .md-placeholder, md-input-container.md-default-theme label, md-input-container label{
+md-input-container label{
   font-family: 'Acme', sans-serif;
   font-size: 18px;
-  color: #9e9e9e;
+}
+
+.label-red{
+  color: red;
+  opacity: 0.5;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused .label-red,
+md-input-container:not(.md-input-invalid).md-input-has-value .label-red{
+  color: red;
+  opacity: 1;
+}
+
+.label-green{
+  color: green;
+  opacity: 0.5;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused .label-green,
+md-input-container:not(.md-input-invalid).md-input-has-value .label-green{
+  color: green;
+  opacity: 1;
+}
+
+.label-blue{
+  color: blue;
+  opacity: 0.5;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused .label-blue,
+md-input-container:not(.md-input-invalid).md-input-has-value .label-blue{
+  color: blue;
+  opacity: 1;
 }
 
 #input-red{
-  font-family: 'Acme', sans-serif;
   color: red;
   font-size: 25px;
   border-color: red;
 }
 
 #input-green{
-  font-family: 'Acme', sans-serif;
   color: green;
   font-size: 25px;
   border-color: green;
 }
 
 #input-blue{
-  font-family: 'Acme', sans-serif;
   color: blue;
   font-size: 25px;
   border-color: blue;
