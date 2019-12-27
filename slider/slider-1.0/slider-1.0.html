@@ -20,8 +20,7 @@
     <div class="text-center mb-3">
         <h1>Slider 1.0</h1>
         <p>Modelo de página HTML</p>
-        <a href="https://araquelos.github.io/">Início</a> | <a
-            href="https://github.com/araquelos/araquelos.github.io/tree/master/slider/slider-1.0" target="_blank">Código
+        <a href="https://araquelos.github.io/">Início</a> | <a href="https://github.com/araquelos/araquelos.github.io/tree/master/slider/slider-1.0" target="_blank">Código
             <i class="fa fa-external-link"></i>
         </a>
         <p>---------- x ----------</p>
@@ -38,34 +37,30 @@
                 <input id="input-red" type="number" ng-model="color.red" aria-label="red" aria-controls="red-slider">
             </md-input-container>
             <md-slider-container>
-                <span>R</span>
+                <span><i class="fa fa-minus-circle icon-red" id="btn-red-minus"></i></span>
                 <md-slider class="md-warn" min="0" max="255" ng-model="color.red" aria-label="red" id="red-slider">
                 </md-slider>
-                <span>R</span>
+                <span><i class="fa fa-plus-circle icon-red" id="btn-red-plus"></i></span>
             </md-slider-container>
             <!-- Slider 2 -->
             <md-input-container class="mt-5">
                 <label class="label-green" for="input-green">Green</label>
-                <input id="input-green" type="number" ng-model="color.green" aria-label="green"
-                    aria-controls="green-slider">
+                <input id="input-green" type="number" ng-model="color.green" aria-label="green" aria-controls="green-slider">
             </md-input-container>
             <md-slider-container>
-                <span>G</span>
-                <md-slider class="md-accent" min="0" max="255" ng-model="color.green" aria-label="green"
-                    id="green-slider"></md-slider>
-                <span>G</span>
+                <span><i class="fa fa-minus-circle icon-green" id="btn-green-minus"></i></span>
+                <md-slider class="md-accent" min="0" max="255" ng-model="color.green" aria-label="green" id="green-slider"></md-slider>
+                <span><i class="fa fa-plus-circle icon-green" id="btn-green-plus"></i></span>
             </md-slider-container>
             <!-- Slider 3 -->
             <md-input-container class="mt-5">
                 <label class="label-blue" for="input-blue">Blue</label>
-                <input id="input-blue" type="number" ng-model="color.blue" aria-label="blue"
-                    aria-controls="blue-slider">
+                <input id="input-blue" type="number" ng-model="color.blue" aria-label="blue" aria-controls="blue-slider">
             </md-input-container>
             <md-slider-container>
-                <span>B</span>
-                <md-slider class="md-primary" min="0" max="255" ng-model="color.blue" aria-label="blue"
-                    id="blue-slider"></md-slider>
-                <span>B</span>
+                <span><i class="fa fa-minus-circle icon-blue" id="btn-blue-minus"></i></span>
+                <md-slider class="md-primary" min="0" max="255" ng-model="color.blue" aria-label="blue" id="blue-slider"></md-slider>
+                <span><i class="fa fa-plus-circle icon-blue" id="btn-blue-plus"></i></span>
             </md-slider-container>
         </div>
     </div>
