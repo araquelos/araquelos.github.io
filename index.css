@@ -1,0 +1,43 @@
+body {
+    background-color: #9a00ff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+}
+
+.titulo h1 {
+    font-weight: bold;
+}
+
+.circulo-branco {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100%;
+    text-align: center;
+    border: 3px dashed gold;
+}
+
+.circulo-branco img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1;
+    color: white;
+}
+
+a {
+    margin-left: auto;
+    margin-right: auto;
+}
