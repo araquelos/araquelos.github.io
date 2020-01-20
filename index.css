@@ -1,5 +1,5 @@
 body {
-    background-color: #9a00ff;
+    background-color: #f06eaa;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
@@ -12,37 +12,128 @@ body {
     font-weight: bold;
 }
 
-.circulo-branco {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border-radius: 100%;
-    text-align: center;
-    border: 3px dashed gold;
+.accordion {
+    font: bold 20px 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-transform: uppercase;
 }
 
-.circulo-branco img {
-    margin-top: 40px;
-    width: 100px;
-}
-
-.titulo-med {
-    margin-top: 5px;
-    height: 90px;
-}
-
-h3 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    line-height: 1;
+.dark {
+    background-color: black;
     color: white;
 }
 
-a {
-    margin-left: auto;
-    margin-right: auto;
+.dark-red {
+    background-color: #cc0000;
+    color: #FFFFFF;
+}
+
+.dark-orange {
+    background-color: #ee7620;
+    color: #FFFFFF;
+}
+
+.dark-yellow {
+    background-color: #fed700;
+    color: #FFFFFF;
+}
+
+.dark-green {
+    background-color: #32cd33;
+    color: #FFFFFF;
+}
+
+.dark-blue {
+    background-color: #4876ff;
+    color: #FFFFFF;
+}
+
+.dark-indigo {
+    background-color: #010080;
+    color: #FFFFFF;
+}
+
+.dark-violet {
+    background-color: #7d26cd;
+    color: #FFFFFF;
+}
+
+.accordion:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: '\f107';
+    font-size: 26px;
+    color: #FFFFFF;
+    float: right;
+}
+
+.active:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f106";
+}
+
+button:focus {
+    outline: none;
+}
+
+.panel {
+    padding: 0 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font: lighter 15px 'Barlow Semi Condensed', sans-serif;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.light-red {
+    background-color: #fe0000;
+    color: #000000;
+}
+
+.light-orange {
+    background-color: #ff6600;
+    color: #000000;
+}
+
+.light-yellow {
+    background-color: #ffff00;
+    color: #000000;
+}
+
+.light-green {
+    background-color: #00ff01;
+    color: #000000;
+}
+
+.light-blue {
+    background-color: #00ffff;
+    color: #000000;
+}
+
+.light-indigo {
+    background-color: #000098;
+    color: #000000;
+}
+
+.light-violet {
+    background-color: #9a00ff;
+    color: #000000;
+}
+
+p {
+    padding: 10px 10px 0 10px;
+    line-height: 1.6;
+}
+
+span {
+    font-weight: bold;
 }
