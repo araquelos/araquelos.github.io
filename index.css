@@ -65,7 +65,7 @@ body {
 }
 
 .accordion:after {
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: FontAwesome;
     content: '\f107';
     font-size: 26px;
     color: #FFFFFF;
@@ -73,7 +73,7 @@ body {
 }
 
 .active:after {
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: FontAwesome;
     content: "\f106";
 }
 
