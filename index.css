@@ -1,139 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 body {
-    background-color: #f06eaa;
+    background: rgb(243, 243, 253);
+    background: radial-gradient(circle, rgba(243, 243, 253, 1) 0%, rgba(209, 213, 250, 1) 100%);
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.titulo {
-    text-align: center;
-    color: white;
+.fundo-degrade {
+    background-image: linear-gradient(to right, #2d005d, #5f0080);
+    box-shadow: 5px 10px 18px #888888;
+    -webkit-box-shadow: 5px 10px 18px #888888;
+    -moz-box-shadow: 5px 10px 18px #888888;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #8682d6;
+}
+
+.navbar-toggler i {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #8682d6;
+}
+
+.user-img img {
+    width: 400px;
+    height: 400px;
+}
+
+.user-info .titulo {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1;
 }
 
 .titulo h1 {
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #8682d6;
 }
 
-.accordion {
-    font: bold 20px 'Barlow Semi Condensed', sans-serif;
+.titulo h2 {
+    font-weight: 500;
+}
+
+.titulo p {
+    text-transform: none;
+    line-height: 1.2;
+}
+
+.titulo ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.titulo ul li {
+    display: inline;
+}
+
+.titulo ul li a {
+    text-transform: none;
+    color: #8682d6;
+}
+
+.redes-sociais ul {
+    list-style: none;
+}
+
+.redes-sociais ul li {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    margin: 20px 10px;
+    text-align: center;
     cursor: pointer;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    text-transform: uppercase;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    float: left;
+    transition: all 0.5s ease;
 }
 
-.dark {
-    background-color: black;
-    color: white;
+.redes-sociais ul li .fa {
+    color: #fff;
+    transition: all 0.5s ease;
 }
 
-.dark-red {
-    background-color: #cc0000;
-    color: #FFFFFF;
+
+/*facebook*/
+
+.redes-sociais ul li:hover.facebook {
+    border: 3px solid #3b5998;
+    box-shadow: 0 0 5px #3b5998;
+    transition: all 0.5s ease;
 }
 
-.dark-orange {
-    background-color: #ee7620;
-    color: #FFFFFF;
+.redes-sociais ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 5px #3b5998;
+    transition: all 0.5s ease;
 }
 
-.dark-yellow {
-    background-color: #fed700;
-    color: #FFFFFF;
+
+/*twitter*/
+
+.redes-sociais ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
 }
 
-.dark-green {
-    background-color: #32cd33;
-    color: #FFFFFF;
+.redes-sociais ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
 }
 
-.dark-blue {
-    background-color: #4876ff;
-    color: #FFFFFF;
+
+/* instagram */
+
+.redes-sociais ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
 }
 
-.dark-indigo {
-    background-color: #010080;
-    color: #FFFFFF;
+.redes-sociais ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
 }
 
-.dark-violet {
-    background-color: #7d26cd;
-    color: #FFFFFF;
+
+/* google */
+
+.redes-sociais ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
 }
 
-.accordion:after {
-    font-family: FontAwesome;
-    content: '\f107';
-    font-size: 26px;
-    color: #FFFFFF;
-    float: right;
+.redes-sociais ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
 }
 
-.active:after {
-    font-family: FontAwesome;
-    content: "\f106";
+
+/* whatsapp */
+
+.redes-sociais ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
 }
 
-button:focus {
-    outline: none;
-}
-
-.panel {
-    padding: 0 5px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    font: lighter 15px 'Barlow Semi Condensed', sans-serif;
-}
-
-.light {
-    background-color: white;
-    color: black;
-}
-
-.light-red {
-    background-color: #fe0000;
-    color: #000000;
-}
-
-.light-orange {
-    background-color: #ff6600;
-    color: #000000;
-}
-
-.light-yellow {
-    background-color: #ffff00;
-    color: #000000;
-}
-
-.light-green {
-    background-color: #00ff01;
-    color: #000000;
-}
-
-.light-blue {
-    background-color: #00ffff;
-    color: #000000;
-}
-
-.light-indigo {
-    background-color: #000098;
-    color: #000000;
-}
-
-.light-violet {
-    background-color: #9a00ff;
-    color: #000000;
-}
-
-p {
-    padding: 10px 10px 0 10px;
-    line-height: 1.6;
-}
-
-span {
-    font-weight: bold;
+.redes-sociais ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
 }
