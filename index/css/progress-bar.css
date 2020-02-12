@@ -1,0 +1,196 @@
+.progress-atuacao {
+    padding: 3px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.progress-bar {
+    height: 12px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+
+/* HTML */
+
+.progress-moved .progress-html {
+    width: 90%;
+    background-color: #f58225;
+    animation: progressAnimationHTML 6s;
+}
+
+@keyframes progressAnimationHTML {
+    0% {
+        width: 5%;
+        background-color: #f5a872;
+    }
+    100% {
+        width: 90%;
+        background-color: #f58225;
+    }
+}
+
+
+/* CSS */
+
+.progress-moved .progress-css {
+    width: 80%;
+    background-color: #f58225;
+    animation: progressAnimationCSS 6s;
+}
+
+@keyframes progressAnimationCSS {
+    0% {
+        width: 5%;
+        background-color: #f5a872;
+    }
+    100% {
+        width: 80%;
+        background-color: #f58225;
+    }
+}
+
+
+/* JavaScript */
+
+.progress-moved .progress-js {
+    width: 50%;
+    background-color: #f58225;
+    animation: progressAnimationJS 6s;
+}
+
+@keyframes progressAnimationJS {
+    0% {
+        width: 5%;
+        background-color: #f5a872;
+    }
+    100% {
+        width: 50%;
+        background-color: #f58225;
+    }
+}
+
+
+/* C# */
+
+.progress-moved .progress-csharp {
+    width: 80%;
+    background-color: #00acac;
+    animation: progressAnimationCSharp 6s;
+}
+
+@keyframes progressAnimationCSharp {
+    0% {
+        width: 5%;
+        background-color: #56c4c5;
+    }
+    100% {
+        width: 80%;
+        background-color: #00acac;
+    }
+}
+
+
+/* Java */
+
+.progress-moved .progress-java {
+    width: 70%;
+    background-color: #00acac;
+    animation: progressAnimationJava 6s;
+}
+
+@keyframes progressAnimationJava {
+    0% {
+        width: 5%;
+        background-color: #56c4c5;
+    }
+    100% {
+        width: 70%;
+        background-color: #00acac;
+    }
+}
+
+
+/* PHP */
+
+.progress-moved .progress-php {
+    width: 30%;
+    background-color: #00acac;
+    animation: progressAnimationPHP 6s;
+}
+
+@keyframes progressAnimationPHP {
+    0% {
+        width: 5%;
+        background-color: #56c4c5;
+    }
+    100% {
+        width: 30%;
+        background-color: #00acac;
+    }
+}
+
+
+/* Photoshop */
+
+.progress-moved .progress-photoshop {
+    width: 90%;
+    background-color: #70be44;
+    animation: progressAnimationPhotoshop 6s;
+}
+
+@keyframes progressAnimationPhotoshop {
+    0% {
+        width: 5%;
+        background-color: #add68a;
+    }
+    100% {
+        width: 90%;
+        background-color: #70be44;
+    }
+}
+
+
+/* Illustrator */
+
+.progress-moved .progress-illustrator {
+    width: 70%;
+    background-color: #70be44;
+    animation: progressAnimationIllustrator 6s;
+}
+
+@keyframes progressAnimationIllustrator {
+    0% {
+        width: 5%;
+        background-color: #add68a;
+    }
+    100% {
+        width: 70%;
+        background-color: #70be44;
+    }
+}
+
+
+/* XD */
+
+.progress-moved .progress-xd {
+    width: 50%;
+    background-color: #70be44;
+    animation: progressAnimationXD 6s;
+}
+
+@keyframes progressAnimationXD {
+    0% {
+        width: 5%;
+        background-color: #add68a;
+    }
+    100% {
+        width: 50%;
+        background-color: #70be44;
+    }
+}
