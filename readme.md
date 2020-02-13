@@ -27,3 +27,12 @@
 - Photoshop
 - Illustrator
 - Adobe XD
+
+>PORTFOLIO
+- Templates
+- Vetores
+
+>IMAGENS (Dimensões)
+- Logo []
+- Img Card [400x400]
+- Img Footer [200x200]

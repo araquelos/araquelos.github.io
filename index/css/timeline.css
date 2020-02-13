@@ -1,11 +1,10 @@
 ul.timeline {
     list-style-type: none;
-    /* position: relative; */
 }
 
 ul.timeline:before {
     content: ' ';
-    background: #d4d9df;
+    background: #b3b4be;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -25,7 +24,7 @@ ul.form>li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #972d1d;
+    border: 3px solid #bb302d;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -33,11 +32,11 @@ ul.form>li:before {
 }
 
 .formacao h4 {
-    color: #972d1d;
+    color: #bb302d;
     font-weight: bold;
 }
 
-.formacao a {
+.form a:not([href]):not([tabindex]) {
     color: #bb302d;
 }
 
@@ -47,7 +46,7 @@ ul.exp>li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #a19600;
+    border: 3px solid #cbbe00;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -55,10 +54,10 @@ ul.exp>li:before {
 }
 
 .experiencia h4 {
-    color: #a19600;
+    color: #cbbe00;
     font-weight: bold;
 }
 
-.experiencia a {
+.experiencia a:not([href]):not([tabindex]) {
     color: #cbbe00;
 }

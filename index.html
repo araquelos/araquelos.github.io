@@ -15,13 +15,15 @@
     <link rel="stylesheet" type="text/css" href="index/css/progress-bar.css">
     <link rel="stylesheet" type="text/css" href="index/css/tabs.css">
     <link rel="stylesheet" type="text/css" href="index/css/timeline.css">
+    <link rel="stylesheet" type="text/css" href="index/css/tabs-portfolio.css">
+    <link rel="stylesheet" type="text/css" href="index/css/card.css">
 </head>
 
 <body>
 
     <div class="container mt-md-5 mt-0">
         <div class="pt-md-4 pt-0">
-            <div class="fundo-degrade">
+            <div class="fundo-degrade shadow">
                 <!-- MENU RESPONSIVO -->
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html">LOGO</a>
@@ -152,28 +154,28 @@
         </div>
     </div>
     <!-- FORMAÇÃO E EXPERIÊNCIA -->
-    <div id="form-exp" class="tabs mt-5 pb-5">
+    <div id="form-exp" class="tabs mt-5 pb-5 shadow-sm">
         <div class="tab-2">
-            <label for="tab2-1"><i class="fa fa-graduation-cap mr-2"></i>Lorem Ipsum</label>
+            <label for="tab2-1" class="color-tab-red"><i class="fa fa-graduation-cap mr-2"></i>Lorem Ipsum</label>
             <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
             <div class="formacao pl-5 pr-5">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <h4>Latest News</h4>
+                        <h4>Lorem Ipsum</h4>
                         <ul class="timeline form">
                             <li>
-                                <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
-                                <a href="#" class="float-right">21 March, 2014</a>
+                                <a>Lorem Ipsum</a>
+                                <a class="float-right">0000-0000</a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                             </li>
                             <li>
-                                <a href="#">21 000 Job Seekers</a>
-                                <a href="#" class="float-right">4 March, 2014</a>
+                                <a>Lorem Ipsum</a>
+                                <a class="float-right">0000-0000</a>
                                 <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
                             </li>
                             <li>
-                                <a href="#">Awesome Employers</a>
-                                <a href="#" class="float-right">1 April, 2014</a>
+                                <a>Lorem Ipsum</a>
+                                <a class="float-right">0000 - 0000</a>
                                 <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
                             </li>
                         </ul>
@@ -182,26 +184,26 @@
             </div>
         </div>
         <div class="tab-2">
-            <label for="tab2-2"><i class="fa fa-briefcase mr-2"></i>Lorem Ipsum</label>
+            <label for="tab2-2" class="color-tab-yellow"><i class="fa fa-briefcase mr-2"></i>Lorem Ipsum</label>
             <input id="tab2-2" name="tabs-two" type="radio">
             <div class="experiencia pl-5 pr-5">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <h4>Latest News</h4>
+                        <h4>Lorem Ipsum</h4>
                         <ul class="timeline exp">
                             <li>
-                                <a target="_blank" href="https://www.totoprayogo.com/#">New Web Design</a>
-                                <a href="#" class="float-right">21 March, 2014</a>
+                                <a>Lorem Ipsum</a>
+                                <a class="float-right">0000-0000</a>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                             </li>
                             <li>
-                                <a href="#">21 000 Job Seekers</a>
-                                <a href="#" class="float-right">4 March, 2014</a>
+                                <a>Lorem Ipsum</a>
+                                <a class="float-right">0000-0000</a>
                                 <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
                             </li>
                             <li>
-                                <a href="#">Awesome Employers</a>
-                                <a href="#" class="float-right">1 April, 2014</a>
+                                <a>Lorem Ipsum</a>
+                                <a class="float-right">0000-0000</a>
                                 <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
                             </li>
                         </ul>
@@ -210,11 +212,67 @@
             </div>
         </div>
     </div>
+    <!-- PORTFÓLIO -->
+    <div id="portfolio" class="container mt-5 mb-5">
+        <h1 class="text-center text-uppercase">Lorem Ipsum</h1>
+        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="tab text-center">
+            <button class="tablinks" onclick="openCity(event, 'Templates')" id="defaultOpen">Loren</button>
+            <button class="tablinks" onclick="openCity(event, 'Vetores')">Ipsum</button>
+        </div>
+        <div id="Templates" class="tabcontent">
+            <div class="row">
+                <div class="col-md-4 col-12 mb-3">
+                    <div class="overlay text-center p-2"><a href="">Lorem Ipsum</a></div>
+                    <img src="img/TempImagem.png" class="img-card shadow">
+                </div>
+                <div class="col-md-4 col-12 mb-3 card-tv">
+                    <div class="overlay text-center p-2"><a href="">Lorem Ipsum</a></div>
+                    <img src="img/TempImagem.png" class="img-card shadow">
+                </div>
+                <div class="col-md-4 col-12 mb-3 card-tv">
+                    <div class="overlay text-center p-2"><a href="">Lorem Ipsum</a></div>
+                    <img src="img/TempImagem.png" class="img-card shadow">
+                </div>
+            </div>
+        </div>
+        <div id="Vetores" class="tabcontent">
+            Em breve...
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer pt-5 pb-5">
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-md-4 col-12">
+                    <img src="img/FooterImage.png">
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="logo-footer">LOGO</div>
+                    <ul class="contato mt-4">
+                        <li class="mb-2"><img src="img/location.svg" class="mr-3">Lorem - Ipsum - Lorem</li>
+                        <li class="mb-2"><img src="img/phone-call.svg" class="mr-3">(00) 00000-0000</li>
+                        <li class="mb-2"><img src="img/email.svg" class="mr-3">email@email.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <blockquote class="text-md-left text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae modi, quam asperiores iure eveniet voluptates debitis eaque sit dolorem voluptate itaque! Animi, ratione! Magni aliquid dolorem impedit incidunt sit."</blockquote>
+                    <div class="signature text-md-right text-center">Raquel Oliveira ♡</div>
+                    <ul class="footer-rs text-md-right text-center">
+                        <li><a href="https://facebook.com/araqueloliv26" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/araqueloliv26" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/araqueloliv26" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5591983840926&text=Digite%20aqui%20a%20sua%20mensagem..." target="_blank" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- BOTÃO VOLTAR AO TOPO -->
     <div id="voltarTopo">
         <a href="#" id="subir">
-            <img src="img/up-arrow.svg" alt="">
+            <img src="img/up-arrow-green.svg" alt="">
         </a>
     </div>
 
