@@ -13,12 +13,11 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    width: 40%;
 }
 
-.navbar-brand:hover {
-    color: #8682d6;
+.navbar-brand img {
+    width: 177px;
 }
 
 .navbar-toggler i {
