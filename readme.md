@@ -23,41 +23,36 @@
   * https://www.linkedin.com/in/araqueloliv26✔
   * https://api.whatsapp.com/send?phone=5591983840926&text=Digite%20aqui%20a%20sua%20mensagem...✔
 
+### Especialidades:
++ Frontend
+  * HTML
+  * CSS
+  * JavaScript
++ Backend
+  * C#
+  * Java
+  * PHP
++ Design
+  * Photoshop
+  * Illustrator
+  * Adobe XD
 
-> Templates:
-- Portfólio `Index` 
-- Páscoa `Hello Bunny`
-- Férias
-- Halloween
-- Natal
+### Formação/Experiência:
++ Formação Acadêmica
+  * Faculdade de Administração, Ciências, Educação e Letras - FACEL
+  * 2012-2012
+  * Especialização em Design de Multitecnologias Digitais
+  * Centro Universitário do Estado do Pará - CESUPA
+  * 2008-2011
+  * Graduação em Ciência da Computação
++ Experiência Profissional
+  * Vibe Tecnologia
+  * 2019-
+  * Atuando como desenvolvedora web em projetos internos e externos. Implementando e dando suporte em sistemas .NET C#. Além de colaborar no desenvolvimento de interfaces gráficas utilizando HTML, CSS e JavaScript.
+  * CS-Consoft Consultoria e Sistemas Ltda
+  * 2013-2017
+  * Atuando como programadora e web designer em projetos internos e ou para clientes na plataforma Outsystems, integrando as atividades de Vendas, Finanças, Contabilidade, Fiscal, Estoque, Compras, Recursos Humanos, Produção e Logística no Sistema Integrado de Gestão Empresarial (ERP).
 
-> Navbar:
-- Logo `RD Portfólio ou Raquel Designer`
-- Item 1 `Sobre`
-- Item 2 `Expecialidades`
-- Item 3 `Formação Acadêmica & Experiência Profissional`
-- Item 4 `Portfólio`
-
->FRONTEND:
-- HTML
-- CSS
-- JAVASCRIPT
-
->BACKEND:
-- C#
-- JAVA
-- PHP
-
->DESIGN:
-- Photoshop
-- Illustrator
-- Adobe XD
-
->PORTFOLIO
-- Templates
-- Vetores
-
->IMAGENS (Dimensões)
-- Logo []
-- Img Card [400x400]
-- Img Footer [200x200]
+### Portfólio:
++ Templates
++ Vetores
