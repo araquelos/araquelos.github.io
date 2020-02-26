@@ -67,5 +67,8 @@
   * Telefone
   * E-mail
 + Coluna 3
-  * Frase: Sou Bacharel em Ciência da Computação e Especialista em Design de Multitecnologias Digitais. Tenho experiência como desenvolvedora Web Back-End e Front-End, com ênfase em .NET, C#, PHP e linguagens para o desenvolvimento de interfaces gráficas como HTML, CSS e JavaScript.
+  * Frase: Bacharel em Ciência da Computação e Especialista em Design de Multitecnologias Digitais. Desenvolvedora Web Back-End e Front-End, e Designer Gráfica.
   * Redes Sociais
+
+### Templates:
++ 1 - 
