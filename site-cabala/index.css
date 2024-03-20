@@ -17,15 +17,15 @@ body {
 
 .img-thumbnail {
     padding: .25rem;
-    background-color: #c59a5b;
+    background-color: #9ACD32;
     border: 1px solid #FFF;
     border-radius: .25rem;
     max-width: 100%;
     height: auto;
 }
 
-.text-gold {
-    color: #c59a5b;
+.text-green {
+    color: #9ACD32;
 }
 
 .nav-item:hover {
